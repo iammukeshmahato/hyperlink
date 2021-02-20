@@ -1,0 +1,25 @@
+<!--JavaScript can change HTML content -->
+<html>
+<body bgcolor="cyan"  font color="red">
+	<h2>What can JavaScript do?</h2>
+<p id="example1">JavaScript can change HTML content</p>
+<button id="button" onclick="myfunction()">Click Me!</button>
+<script type="text/javascript">
+	var m=0;
+	function myfunction(){	
+		if (m==0) {
+			document.getElementById("example1").innerHTML="Hello students welcome to JavaScript";
+			document.getElementById("button").innerHTML="Click Me!";
+			m=1;
+			
+		}
+		else if(m==1){
+			document.getElementById("example1").innerHTML="welcome to JavaScript";
+			document.getElementById("button").innerHTML="Click me!";
+			m=0;
+		}
+	}
+	
+</script>
+</body>
+</html>
